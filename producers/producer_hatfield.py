@@ -5,13 +5,11 @@ Stream JSON data to a file and - if available - a Kafka topic.
 
 Example JSON message
 {
-    "message": "I just shared a meme! It was amazing.",
-    "author": "Charlie",
+    "author": "Elin Hilderbrand.",
+    "title": "The Perfect Couple",
     "timestamp": "2025-01-29 14:35:20",
-    "category": "humor",
-    "sentiment": 0.87,
-    "keyword_mentioned": "meme",
-    "message_length": 42
+    "reader": "Hannah S",
+    "rating": 4
 }
 
 """
