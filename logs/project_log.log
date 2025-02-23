@@ -310,3 +310,368 @@
 2025-02-23 12:07:39.163 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
 2025-02-23 12:07:42.168 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
 2025-02-23 12:07:45.173 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:08:36.015 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:08:36.035 | INFO     | __main__:<module>:68 - Project root: C:\Users\Owner\Desktop\buzzline-06-hatfield
+2025-02-23 12:08:36.035 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Owner\Desktop\buzzline-06-hatfield\data
+2025-02-23 12:08:36.035 | INFO     | __main__:<module>:76 - Data file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:08:36.035 | INFO     | __main__:main:136 - START producer.
+2025-02-23 12:08:36.035 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-23 12:08:36.041 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-23 12:08:36.041 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:08:36.421 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'DZQEpi9tQK2v34v2Qkuykg', 'controller_id': 0}
+2025-02-23 12:08:36.424 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-23 12:08:36.426 | INFO     | __main__:get_message_interval:57 - Message interval: 3 seconds
+2025-02-23 12:08:36.426 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:08:36.426 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-23 12:08:36.549 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-23 12:08:36.549 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:08:36.888 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'buzzline_json' already exists. Clearing it out...
+2025-02-23 12:08:36.888 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:08:37.273 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'buzzline_json': list indices must be integers or slices, not ConfigResource
+2025-02-23 12:08:37.273 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-23 12:08:37.273 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-23 12:08:37.273 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:08:37.287 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:08:37.291 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:08:40.300 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:08:43.304 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:08:46.309 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:08:49.313 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:08:52.318 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:08:55.322 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:08:58.328 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:09:01.330 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:09:04.335 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:07.339 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:09:10.344 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:09:12.257 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:09:12.542 | INFO     | __main__:main:84 - START consumer.
+2025-02-23 12:09:12.542 | INFO     | __main__:main:87 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-23 12:09:12.542 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:09:12.542 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-23 12:09:12.663 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-23 12:09:12.663 | INFO     | __main__:main:90 - Polling messages from topic 'buzzline_json'...
+2025-02-23 12:09:12.829 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:09:12.832 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 1 readers
+2025-02-23 12:09:12.856 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:12.859 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:09:12.859 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 2 readers
+2025-02-23 12:09:12.898 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:12.898 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:09:12.898 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 3 readers
+2025-02-23 12:09:12.934 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:12.934 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:12.934 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 4 readers
+2025-02-23 12:09:12.959 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:12.959 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:09:12.959 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 5 readers
+2025-02-23 12:09:12.983 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:12.983 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:12.983 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 1 readers
+2025-02-23 12:09:13.002 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.005 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:09:13.005 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 2 readers
+2025-02-23 12:09:13.009 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.028 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:09:13.028 | INFO     | __main__:process_message:67 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 1 readers
+2025-02-23 12:09:13.042 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.042 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:09:13.042 | INFO     | __main__:process_message:67 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 2 readers
+2025-02-23 12:09:13.059 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.059 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:09:13.059 | INFO     | __main__:process_message:67 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 3 readers
+2025-02-23 12:09:13.082 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.095 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:09:13.099 | INFO     | __main__:process_message:67 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 4 readers
+2025-02-23 12:09:13.109 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.121 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:13.122 | INFO     | __main__:process_message:67 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 5 readers
+2025-02-23 12:09:13.126 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.146 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:13.146 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 6 readers
+2025-02-23 12:09:13.159 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.159 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:09:13.159 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.182 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.192 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:09:13.192 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.210 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.219 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:09:13.219 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.226 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.238 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:13.238 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.242 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.256 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:09:13.256 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.259 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.275 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:09:13.276 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:09:13.296 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:13.348 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:09:13.348 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:09:13.355 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:13.359 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:16.351 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:16.365 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:16.367 | INFO     | __main__:process_message:67 - Updated reader counts for 'Laura Nowlin - If He Had Been With Me': 1 readers
+2025-02-23 12:09:16.400 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:19.355 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:09:19.367 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:09:19.367 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:19.409 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:22.361 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:09:22.361 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:09:22.375 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:22.412 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:25.368 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:09:25.370 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:09:25.381 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:25.419 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:28.370 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:09:28.386 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:09:28.387 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:28.417 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:31.398 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:31.401 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:31.376 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:09:31.431 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:34.415 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:09:34.415 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:09:34.423 | INFO     | __main__:process_message:67 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:09:34.443 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:37.417 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:37.417 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:09:37.424 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 2 readers
+2025-02-23 12:09:37.433 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:40.420 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:09:40.420 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:09:40.435 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 2 readers
+2025-02-23 12:09:40.467 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:43.425 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:09:43.425 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:09:43.440 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 3 readers
+2025-02-23 12:09:43.484 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:46.431 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:09:46.431 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:09:46.439 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 4 readers
+2025-02-23 12:09:46.455 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:49.435 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:09:49.435 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:09:49.447 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 5 readers
+2025-02-23 12:09:49.461 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:52.439 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:09:52.452 | INFO     | __main__:process_message:55 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:09:52.452 | INFO     | __main__:process_message:67 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 6 readers
+2025-02-23 12:09:52.484 | ERROR    | __main__:process_message:75 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:09:55.444 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:09:58.448 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:10:01.452 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:10:04.464 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:10:07.469 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:10:10.474 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:10:13.480 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:10:16.484 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:10:19.488 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:10:22.497 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:10:25.512 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:10:28.515 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:10:28.515 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:10:28.515 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:10:31.523 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:10:34.531 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:10:37.534 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:10:40.538 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:10:43.543 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:10:46.563 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:10:49.570 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:10:52.621 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:10:55.643 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:10:58.647 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:11:01.651 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:11:04.655 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:11:07.688 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:09.752 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:11:10.047 | INFO     | __main__:main:93 - START consumer.
+2025-02-23 12:11:10.047 | INFO     | __main__:main:96 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-23 12:11:10.047 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:11:10.047 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-23 12:11:10.166 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-23 12:11:10.166 | INFO     | __main__:main:99 - Polling messages from topic 'buzzline_json'...
+2025-02-23 12:11:10.333 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:11:10.333 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 1 readers
+2025-02-23 12:11:10.359 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.364 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:11:10.364 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 2 readers
+2025-02-23 12:11:10.402 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.402 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:11:10.402 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 3 readers
+2025-02-23 12:11:10.414 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.425 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:11:10.425 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 4 readers
+2025-02-23 12:11:10.431 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.445 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:10.445 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 1 readers
+2025-02-23 12:11:10.447 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.462 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:11:10.462 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 2 readers
+2025-02-23 12:11:10.464 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.479 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:11:10.479 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 3 readers
+2025-02-23 12:11:10.481 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.497 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:11:10.497 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 4 readers
+2025-02-23 12:11:10.514 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.514 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:11:10.514 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 5 readers
+2025-02-23 12:11:10.531 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.547 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:11:10.547 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 6 readers
+2025-02-23 12:11:10.564 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.567 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:11:10.567 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:11:10.581 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.581 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:11:10.581 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 1 readers
+2025-02-23 12:11:10.597 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.597 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:11:10.610 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 2 readers
+2025-02-23 12:11:10.631 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.636 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:11:10.636 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 3 readers
+2025-02-23 12:11:10.651 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.662 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:11:10.664 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 4 readers
+2025-02-23 12:11:10.681 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.681 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:11:10.681 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 5 readers
+2025-02-23 12:11:10.698 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:11:10.711 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.714 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:10.714 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 1 readers
+2025-02-23 12:11:10.731 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.731 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:11:10.731 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 2 readers
+2025-02-23 12:11:10.748 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.748 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:11:10.748 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 3 readers
+2025-02-23 12:11:10.767 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.775 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:11:10.775 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 4 readers
+2025-02-23 12:11:10.781 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.793 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:11:10.794 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 5 readers
+2025-02-23 12:11:10.797 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.813 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:11:10.814 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 6 readers
+2025-02-23 12:11:10.830 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.831 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:11:10.831 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 7 readers
+2025-02-23 12:11:10.848 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.848 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:11:10.848 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:10.868 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.868 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:10.868 | INFO     | __main__:process_message:75 - Updated reader counts for 'Laura Nowlin - If He Had Been With Me': 1 readers
+2025-02-23 12:11:10.887 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:10.893 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:11:10.898 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:10.914 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:13.707 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:11:13.713 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:11:13.713 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:13.729 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:16.710 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:11:16.724 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:11:16.724 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:16.765 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:19.715 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:11:19.715 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:11:19.723 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:19.731 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:22.718 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:11:22.718 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:11:22.733 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:22.766 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:25.723 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:11:25.737 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:11:25.739 | INFO     | __main__:process_message:75 - Updated reader counts for 'Lucy Score - Things We Never Got Over': 8 readers
+2025-02-23 12:11:25.771 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:28.729 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:28.729 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:28.741 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 5 readers
+2025-02-23 12:11:28.757 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:31.733 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:11:31.733 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:11:31.742 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 6 readers
+2025-02-23 12:11:31.757 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:34.738 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:11:34.738 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:11:34.749 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 7 readers
+2025-02-23 12:11:34.774 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:37.741 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:11:37.741 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:11:37.751 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 8 readers
+2025-02-23 12:11:37.771 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:40.751 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:11:43.415 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:11:43.415 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 9 readers
+2025-02-23 12:11:43.454 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:43.754 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:11:43.754 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:11:43.767 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 10 readers
+2025-02-23 12:11:43.782 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:46.764 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:11:46.764 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:11:46.774 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 10 readers
+2025-02-23 12:11:46.790 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:49.768 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:11:49.768 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:11:49.784 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 10 readers
+2025-02-23 12:11:49.818 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:52.772 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:11:52.772 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:11:52.784 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 10 readers
+2025-02-23 12:11:52.820 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:55.776 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:11:55.788 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:11:55.791 | INFO     | __main__:process_message:75 - Updated reader counts for 'Rebecca Yarros - Fourth Wing': 10 readers
+2025-02-23 12:11:55.822 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:11:58.780 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:58.792 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:11:58.792 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:11:58.853 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:01.785 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:12:01.796 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:12:01.796 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:01.841 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:04.789 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:12:04.789 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:12:04.806 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:04.848 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:07.795 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:12:07.809 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:12:07.809 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:07.845 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:10.801 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:12:10.813 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:12:10.814 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:10.845 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:13.807 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:12:13.817 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:12:13.818 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:13.848 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:16.811 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:12:16.823 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:12:16.823 | INFO     | __main__:process_message:75 - Updated reader counts for 'Kristin Hannah - The Women': 7 readers
+2025-02-23 12:12:16.842 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:19.823 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:12:19.823 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:12:19.823 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:12:19.833 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:12:19.841 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 5 readers
+2025-02-23 12:12:19.868 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'
+2025-02-23 12:12:22.833 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:12:22.848 | INFO     | __main__:process_message:57 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:12:22.851 | INFO     | __main__:process_message:75 - Updated reader counts for 'Elin Hilderbrand - The Perfect Couple': 5 readers
+2025-02-23 12:12:22.881 | ERROR    | __main__:process_message:83 - Error processing message: unhashable type: 'numpy.ndarray'

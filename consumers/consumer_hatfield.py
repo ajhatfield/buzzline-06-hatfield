@@ -43,6 +43,8 @@ def update_chart():
     plt.pause(0.01)
 
 # Process a single message
+import numpy as np  # Import numpy to check for arrays
+
 def process_message(message: str) -> None:
     """
     Process a single JSON message from Kafka and update the chart.
@@ -60,6 +62,18 @@ def process_message(message: str) -> None:
             title = message_dict.get("title", "Unknown Title")
             reader = message_dict.get("reader", "Unknown Reader")
 
+            # Ensure the author, title, and reader are strings (handle potential numpy.ndarray)
+            def ensure_string(value):
+                if isinstance(value, np.ndarray):
+                    return str(value.tolist())  # Convert numpy array to string
+                elif not isinstance(value, str):
+                    return str(value)  # Convert to string if not already
+                return value
+
+            author = ensure_string(author)
+            title = ensure_string(title)
+            reader = ensure_string(reader)
+
             # Use a tuple of (author, title) as the key, and add the reader to the set
             book_key = (author, title)
             reader_counts[book_key].add(reader)
@@ -73,6 +87,7 @@ def process_message(message: str) -> None:
         logger.error(f"Invalid JSON message: {message}")
     except Exception as e:
         logger.error(f"Error processing message: {e}")
+
 
 # Main function to consume messages from Kafka
 def main() -> None:
