@@ -1,4 +1,4 @@
-The producer gets messages from the book_data.json folder in order to get the author, title, timestamp, reader, and rating of multiple different books and exchanges the information via a Kafka topic. The consumer takes the messages and analyzes how many readers have read each unique book. Once the consumer analyzes this, it live updates a bar graph the plots the most popular books by uising matplotlib. By looking at this producer and consumer, you can know what the most popular books are. 
+The producer gets messages from the book_data.json folder in order to get the author, title, timestamp, reader, and rating of multiple different books and exchanges the information via a Kafka topic. The consumer takes the messages and analyzes how many readers have read each unique book. Once the consumer analyzes this, it live updates a bar graph then plots the most popular books by using matplotlib. By looking at this producer and consumer, you can know what the most popular books are. 
 
 ## Task 1. Use Tools from Module 1 and 2
 
