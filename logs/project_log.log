@@ -1613,3 +1613,10 @@
 2025-02-23 12:29:01.686 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
 2025-02-23 12:29:01.801 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
 2025-02-23 12:29:01.801 | INFO     | __main__:main:105 - Polling messages from topic 'buzzline_json'...
+2025-02-23 12:31:13.362 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:31:13.608 | INFO     | __main__:main:99 - START consumer.
+2025-02-23 12:31:13.608 | INFO     | __main__:main:102 - Consumer: Topic 'bookdata_json' and group 'bookdata_group'...
+2025-02-23 12:31:13.608 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:31:13.608 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='bookdata_json' and group ID='bookdata_group'.
+2025-02-23 12:31:13.732 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-23 12:31:13.732 | INFO     | __main__:main:105 - Polling messages from topic 'bookdata_json'...
