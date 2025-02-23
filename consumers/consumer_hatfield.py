@@ -23,7 +23,7 @@ def update_chart():
     ax.clear()
 
     # Prepare data for the chart
-    books = list(reader_counts.keys())
+    books = [f"{author} - {title}" for author, title in reader_counts.keys()]  # Create readable string for (author, title)
     reader_counts_list = [len(readers) for readers in reader_counts.values()]
 
     # Create bar chart
