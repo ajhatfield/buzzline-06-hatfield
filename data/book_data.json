@@ -1,402 +1,76 @@
-[
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Eve"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Alice"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Charlie"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Alice"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Diana"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Alice"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Diana"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Eve"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Eve"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Alice"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Diana"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Diana"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Charlie"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Bob"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Eve"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Eve"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Alice"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Alice"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Diana"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Eve"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Bob"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Alice"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Diana"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Diana"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Bob"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Diana"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Diana"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Alice"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Charlie"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Diana"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Bob"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Alice"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Alice"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Bob"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Diana"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Alice"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Alice"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Diana"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Alice"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Bob"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Diana"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Eve"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Alice"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Eve"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Alice"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Bob"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Alice"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Alice"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Alice"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Diana"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Bob"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Alice"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Eve"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Diana"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Charlie"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Alice"
-    },
-    {
-        "message": "Hello, Kafka world!",
-        "author": "Diana"
-    },
-    {
-        "message": "Kafka is awesome.",
-        "author": "Bob"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Eve"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Charlie"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Charlie"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Charlie"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Diana"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Diana"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Eve"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Eve"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Eve"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Alice"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Bob"
-    },
-    {
-        "message": "I love Python!",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Eve"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Alice"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Diana"
-    },
-    {
-        "message": "Streaming data is fun.",
-        "author": "Eve"
-    },
-    {
-        "message": "Have a great day!",
-        "author": "Charlie"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Eve"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Diana"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Distributed systems are fascinating.",
-        "author": "Charlie"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Bob"
-    },
-    {
-        "message": "This is a buzz message.",
-        "author": "Eve"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Diana"
-    },
-    {
-        "message": "Data engineering is my passion.",
-        "author": "Alice"
-    },
-    {
-        "message": "Buzz messages for everyone.",
-        "author": "Diana"
-    },
-    {
-        "message": "JSON makes life easier.",
-        "author": "Alice"
-    }
+[{"author": "Elin Hilderbrand", "title": "The Perfect Couple", "timestamp": "2025-01-28 14:35:20", "reader": "Hannah S", "rating": 4},
+
+{"author": "Elin Hilderbrand", "title": "The Perfect Couple", "timestamp": "2025-01-27 14:35:20", "reader": "Britlyn S", "rating": 3},
+
+{"author": "Elin Hilderbrand", "title": "The Perfect Couple", "timestamp": "2025-01-31 14:35:20", "reader": "Alison H", "rating": 2},
+
+{"author": "Elin Hilderbrand", "title": "The Perfect Couple", "timestamp": "2025-01-01 14:35:20", "reader": "Lauren F", "rating": 1},
+
+{"author": "Elin Hilderbrand", "title": "The Perfect Couple", "timestamp": "2025-01-05 14:35:20", "reader": "Megan H", "rating": 3},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Britlyn S", "rating": 5},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Hannah S", "rating": 5},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Alison H", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Lauren F", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Megan H", "rating": 3},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Molly E", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Meagan S", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Alli J", "rating": 3},
+
+{"author": "Laura Nowlin", "title": "If He Had Been With Me", "timestamp": "2025-01-29 14:35:20", "reader": "Britlyn S", "rating": 5},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Hannah S", "rating": 3},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Lauren F", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Alison H", "rating": 3},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Molly E", "rating": 4},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Megan H", "rating": 3},
+
+{"author": "Lucy Score", "title": "Things We Never Got Over", "timestamp": "2025-01-29 14:35:20", "reader": "Meagan S", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Britlyn S", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Hannah S", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Lauren F", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Meagan S", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Megan H", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Molly E", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Alison H", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Alli J", "rating": 5},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Judy H", "rating": 4},
+
+{"author": "Rebecca Yarros", "title": "Fourth Wing", "timestamp": "2025-01-29 14:35:20", "reader": "Lindsey G", "rating": 5},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Britlyn S", "rating": 5},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Lauren F", "rating": 4},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Meagan S", "rating": 4},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Megan H", "rating": 5},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Molly E", "rating": 4},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Alison H", "rating": 5},
+
+{"author": "Kristin Hannah", "title": "The Women", "timestamp": "2025-01-29 14:35:20", "reader": "Judy H", "rating": 5}
+
 ]
+

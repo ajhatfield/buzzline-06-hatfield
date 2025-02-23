@@ -10,8 +10,7 @@ from utils.utils_logger import logger
 load_dotenv()
 
 # Initialize data structures
-message_counts = defaultdict(int)
-exclamation_counts = {"with_exclamation": 0, "without_exclamation": 0}
+reader_counts = defaultdict(set)  # Use a set to ensure each reader is counted once per book
 
 # Set up live visuals
 fig, ax = plt.subplots()
@@ -19,24 +18,24 @@ plt.ion()  # Turn on interactive mode for live updates
 
 # Update chart function for live plotting
 def update_chart():
-    """Update the live chart with counts for messages with and without '!'"""
+    """Update the live chart with counts of unique readers for each book."""
     # Clear the previous chart
     ax.clear()
 
     # Prepare data for the chart
-    categories = list(exclamation_counts.keys())
-    counts = list(exclamation_counts.values())
+    books = list(reader_counts.keys())
+    reader_counts_list = [len(readers) for readers in reader_counts.values()]
 
     # Create bar chart
-    ax.bar(categories, counts, color=["blue", "red"])
+    ax.bar(books, reader_counts_list, color="green")
 
     # Set labels and title
-    ax.set_xlabel("Message Categories")
-    ax.set_ylabel("Message Counts")
-    ax.set_title('Messages with and without "!"')
+    ax.set_xlabel("Books")
+    ax.set_ylabel("Number of Readers")
+    ax.set_title('Number of Readers for Each Book')
 
     # Rotate x-axis labels and adjust layout
-    ax.set_xticklabels(categories, rotation=45, ha="right")
+    ax.set_xticklabels(books, rotation=45, ha="right")
     plt.tight_layout()
 
     # Draw and pause briefly to update the chart
@@ -56,17 +55,16 @@ def process_message(message: str) -> None:
         logger.info(f"Processed JSON message: {message_dict}")
 
         if isinstance(message_dict, dict):
-            # Extract the message and author
-            topic = message_dict.get("category", "unknown")
-            msg_content = message_dict.get("message", "")
+            # Extract book information and reader
+            author = message_dict.get("author", "Unknown Author")
+            title = message_dict.get("title", "Unknown Title")
+            reader = message_dict.get("reader", "Unknown Reader")
 
-            # Check if the message contains "!"
-            if '!' in msg_content:
-                exclamation_counts["with_exclamation"] += 1
-            else:
-                exclamation_counts["without_exclamation"] += 1
+            # Use a tuple of (author, title) as the key, and add the reader to the set
+            book_key = (author, title)
+            reader_counts[book_key].add(reader)
 
-            logger.info(f"Updated exclamation counts: {exclamation_counts}")
+            logger.info(f"Updated reader counts for '{author} - {title}': {len(reader_counts[book_key])} readers")
             
             # Update the chart
             update_chart()

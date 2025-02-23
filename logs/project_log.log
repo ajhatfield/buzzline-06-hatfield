@@ -1,0 +1,312 @@
+2025-02-23 12:02:58.156 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:02:58.171 | INFO     | __main__:<module>:68 - Project root: C:\Users\Owner\Desktop\buzzline-06-hatfield
+2025-02-23 12:02:58.171 | INFO     | __main__:<module>:72 - Data folder: C:\Users\Owner\Desktop\buzzline-06-hatfield\data
+2025-02-23 12:02:58.171 | INFO     | __main__:<module>:76 - Data file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:02:58.171 | INFO     | __main__:main:136 - START producer.
+2025-02-23 12:02:58.171 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-23 12:02:58.190 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-23 12:02:58.190 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:02:58.557 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'DZQEpi9tQK2v34v2Qkuykg', 'controller_id': 0}
+2025-02-23 12:02:58.557 | INFO     | __main__:get_kafka_topic:50 - Kafka topic: buzzline_json
+2025-02-23 12:02:58.557 | INFO     | __main__:get_message_interval:57 - Message interval: 3 seconds
+2025-02-23 12:02:58.575 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:02:58.575 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-23 12:02:58.699 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-23 12:02:58.699 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:02:59.043 | INFO     | utils.utils_producer:create_kafka_topic:176 - Creating 'buzzline_json'.
+2025-02-23 12:02:59.441 | INFO     | utils.utils_producer:create_kafka_topic:181 - Topic 'buzzline_json' created successfully.
+2025-02-23 12:02:59.444 | INFO     | __main__:main:159 - Kafka topic 'buzzline_json' is ready.
+2025-02-23 12:02:59.444 | INFO     | __main__:main:165 - Starting message production to topic 'buzzline_json'...
+2025-02-23 12:02:59.444 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:02:59.464 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:02:59.489 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:03:02.494 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:03:05.498 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:03:08.503 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:03:11.509 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:03:14.515 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:03:17.520 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:03:20.529 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:03:23.533 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:03:26.537 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:03:29.543 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:03:32.547 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:03:35.552 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:03:38.556 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:03:41.561 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:03:44.566 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:03:47.574 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:03:50.580 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:03:53.584 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:03:56.592 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:03:59.597 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:04:02.600 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:04:05.614 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:04:08.622 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:04:11.626 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:04:14.630 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:04:17.634 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:04:20.637 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:04:23.642 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:04:26.649 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:04:29.651 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:04:32.658 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:04:35.663 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:04:38.668 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:04:41.677 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:04:44.681 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:04:47.687 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:04:50.689 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:04:50.699 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:04:50.715 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:04:53.726 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:04:56.731 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:04:59.735 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:05:02.740 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:05:05.745 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:05:08.750 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:05:11.755 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:05:14.764 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:05:17.775 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:05:20.780 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:05:23.786 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:05:26.793 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:05:29.801 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:05:32.805 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:05:35.810 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:05:38.814 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:05:41.819 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:05:44.823 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:05:47.826 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:05:50.830 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:05:53.835 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:05:56.886 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:05:59.889 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:06:02.896 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:06:05.899 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:06:08.915 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:06:11.921 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:06:14.924 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:06:17.928 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:06:20.934 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:06:23.942 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:06:26.946 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:06:29.955 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:06:32.979 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:06:35.989 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:06:38.994 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:06:41.998 | INFO     | __main__:generate_messages:95 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:06:41.998 | INFO     | __main__:generate_messages:97 - Reading data from file: C:\Users\Owner\Desktop\buzzline-06-hatfield\data\book_data.json
+2025-02-23 12:06:41.998 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:06:45.005 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:06:48.011 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:06:51.014 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:06:54.018 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:06:57.023 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:00.027 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:03.031 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:07:06.102 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:09.109 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:12.114 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:15.122 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:18.126 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:07:20.853 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-23 12:07:21.129 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:24.137 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:07:24.554 | INFO     | __main__:main:86 - START consumer.
+2025-02-23 12:07:24.554 | INFO     | __main__:main:89 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-23 12:07:24.554 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-23 12:07:24.554 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-23 12:07:24.675 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-23 12:07:24.675 | INFO     | __main__:main:92 - Polling messages from topic 'buzzline_json'...
+2025-02-23 12:07:26.360 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:07:26.366 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 1}
+2025-02-23 12:07:26.672 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:07:26.672 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 2}
+2025-02-23 12:07:26.787 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:07:26.787 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 3}
+2025-02-23 12:07:26.903 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:07:26.903 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 4}
+2025-02-23 12:07:27.012 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:27.021 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 5}
+2025-02-23 12:07:27.120 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:27.120 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 6}
+2025-02-23 12:07:27.146 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:27.237 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:27.238 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 7}
+2025-02-23 12:07:27.360 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:07:27.360 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 8}
+2025-02-23 12:07:27.567 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:27.567 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 9}
+2025-02-23 12:07:27.710 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:27.710 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 10}
+2025-02-23 12:07:27.820 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:27.828 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 11}
+2025-02-23 12:07:27.920 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:27.928 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 12}
+2025-02-23 12:07:28.028 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:07:28.028 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 13}
+2025-02-23 12:07:28.137 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:28.145 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 14}
+2025-02-23 12:07:28.246 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:07:28.246 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 15}
+2025-02-23 12:07:28.345 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:28.353 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 16}
+2025-02-23 12:07:28.454 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:07:28.454 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 17}
+2025-02-23 12:07:28.561 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:28.561 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 18}
+2025-02-23 12:07:28.679 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:28.679 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 19}
+2025-02-23 12:07:28.779 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:07:28.779 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 20}
+2025-02-23 12:07:28.895 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:28.895 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 21}
+2025-02-23 12:07:28.995 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:28.995 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 22}
+2025-02-23 12:07:29.087 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:07:29.087 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 23}
+2025-02-23 12:07:29.187 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:07:29.187 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 24}
+2025-02-23 12:07:29.286 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:07:29.286 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 25}
+2025-02-23 12:07:29.387 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:07:29.387 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 26}
+2025-02-23 12:07:29.495 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:07:29.495 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 27}
+2025-02-23 12:07:29.587 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:07:29.587 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 28}
+2025-02-23 12:07:29.705 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:07:29.705 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 29}
+2025-02-23 12:07:29.813 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:07:29.813 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 30}
+2025-02-23 12:07:29.913 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:29.913 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 31}
+2025-02-23 12:07:30.013 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:30.013 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 32}
+2025-02-23 12:07:30.121 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:30.121 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 33}
+2025-02-23 12:07:30.149 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:07:30.237 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:07:30.237 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 34}
+2025-02-23 12:07:30.354 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:30.354 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 35}
+2025-02-23 12:07:30.478 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:07:30.478 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 36}
+2025-02-23 12:07:30.587 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:07:30.595 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 37}
+2025-02-23 12:07:30.703 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:07:30.703 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 38}
+2025-02-23 12:07:30.811 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:07:30.811 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 39}
+2025-02-23 12:07:30.927 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:07:30.927 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 40}
+2025-02-23 12:07:31.045 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:07:31.054 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 41}
+2025-02-23 12:07:31.164 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:31.165 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 42}
+2025-02-23 12:07:31.271 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:31.279 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 43}
+2025-02-23 12:07:31.370 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:31.370 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 44}
+2025-02-23 12:07:31.470 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:07:31.470 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 45}
+2025-02-23 12:07:31.562 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:31.562 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 46}
+2025-02-23 12:07:31.654 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:31.654 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 47}
+2025-02-23 12:07:31.745 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:31.745 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 48}
+2025-02-23 12:07:31.909 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:31.909 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 49}
+2025-02-23 12:07:32.295 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:07:32.296 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 50}
+2025-02-23 12:07:32.357 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:32.357 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 51}
+2025-02-23 12:07:32.432 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:07:32.437 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 52}
+2025-02-23 12:07:32.507 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:32.507 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 53}
+2025-02-23 12:07:32.573 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:07:32.573 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 54}
+2025-02-23 12:07:32.637 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:32.640 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 55}
+2025-02-23 12:07:32.687 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:32.692 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 56}
+2025-02-23 12:07:32.738 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:07:32.738 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 57}
+2025-02-23 12:07:32.812 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:32.812 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 58}
+2025-02-23 12:07:32.892 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:32.892 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 59}
+2025-02-23 12:07:32.970 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 5}
+2025-02-23 12:07:32.970 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 60}
+2025-02-23 12:07:33.016 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:07:33.017 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 61}
+2025-02-23 12:07:33.069 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:07:33.069 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 62}
+2025-02-23 12:07:33.114 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 5}
+2025-02-23 12:07:33.114 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 63}
+2025-02-23 12:07:33.156 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:33.164 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:07:33.164 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 64}
+2025-02-23 12:07:33.208 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 5}
+2025-02-23 12:07:33.208 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 65}
+2025-02-23 12:07:33.258 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 4}
+2025-02-23 12:07:33.258 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 66}
+2025-02-23 12:07:33.300 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lindsey G', 'rating': 5}
+2025-02-23 12:07:33.300 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 67}
+2025-02-23 12:07:33.342 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:33.342 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 68}
+2025-02-23 12:07:33.387 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:33.387 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 69}
+2025-02-23 12:07:33.430 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:33.430 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 70}
+2025-02-23 12:07:33.473 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 5}
+2025-02-23 12:07:33.473 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 71}
+2025-02-23 12:07:33.624 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:33.624 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 72}
+2025-02-23 12:07:34.038 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 5}
+2025-02-23 12:07:34.038 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 73}
+2025-02-23 12:07:34.092 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Kristin Hannah', 'title': 'The Women', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Judy H', 'rating': 5}
+2025-02-23 12:07:34.092 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 74}
+2025-02-23 12:07:34.164 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-28 14:35:20', 'reader': 'Hannah S', 'rating': 4}
+2025-02-23 12:07:34.164 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 75}
+2025-02-23 12:07:34.231 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-27 14:35:20', 'reader': 'Britlyn S', 'rating': 3}
+2025-02-23 12:07:34.233 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 76}
+2025-02-23 12:07:34.299 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-31 14:35:20', 'reader': 'Alison H', 'rating': 2}
+2025-02-23 12:07:34.299 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 77}
+2025-02-23 12:07:34.350 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-01 14:35:20', 'reader': 'Lauren F', 'rating': 1}
+2025-02-23 12:07:34.350 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 78}
+2025-02-23 12:07:34.393 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Elin Hilderbrand', 'title': 'The Perfect Couple', 'timestamp': '2025-01-05 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:34.393 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 79}
+2025-02-23 12:07:34.446 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:34.455 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 80}
+2025-02-23 12:07:34.501 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
+2025-02-23 12:07:34.501 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 81}
+2025-02-23 12:07:34.558 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 4}
+2025-02-23 12:07:34.558 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 82}
+2025-02-23 12:07:34.607 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:34.607 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 83}
+2025-02-23 12:07:34.658 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:34.659 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 84}
+2025-02-23 12:07:34.707 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:34.708 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 85}
+2025-02-23 12:07:34.757 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 4}
+2025-02-23 12:07:34.757 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 86}
+2025-02-23 12:07:34.801 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alli J', 'rating': 3}
+2025-02-23 12:07:34.801 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 87}
+2025-02-23 12:07:34.848 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Laura Nowlin', 'title': 'If He Had Been With Me', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:34.848 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 88}
+2025-02-23 12:07:34.895 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 3}
+2025-02-23 12:07:34.895 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 89}
+2025-02-23 12:07:34.941 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Lauren F', 'rating': 4}
+2025-02-23 12:07:34.949 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 90}
+2025-02-23 12:07:35.007 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Alison H', 'rating': 3}
+2025-02-23 12:07:35.007 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 91}
+2025-02-23 12:07:35.057 | INFO     | __main__:process_message:56 - Processed JSON message: {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Molly E', 'rating': 4}
+2025-02-23 12:07:35.057 | INFO     | __main__:process_message:69 - Updated exclamation counts: {'with_exclamation': 0, 'without_exclamation': 92}
+2025-02-23 12:07:36.160 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Megan H', 'rating': 3}
+2025-02-23 12:07:39.163 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Lucy Score', 'title': 'Things We Never Got Over', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Meagan S', 'rating': 5}
+2025-02-23 12:07:42.168 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Britlyn S', 'rating': 5}
+2025-02-23 12:07:45.173 | INFO     | __main__:main:170 - Sent message to topic 'buzzline_json': {'author': 'Rebecca Yarros', 'title': 'Fourth Wing', 'timestamp': '2025-01-29 14:35:20', 'reader': 'Hannah S', 'rating': 5}
