@@ -27,7 +27,8 @@ def update_chart():
     reader_counts_list = [len(readers) for readers in reader_counts.values()]
 
     # Create bar chart
-    ax.bar(books, reader_counts_list, color="green")
+    colors = "red", "orange", "yellow", "green", "blue"
+    ax.bar(books, reader_counts_list, color= colors)
 
     # Set labels and title
     ax.set_xlabel("Books")
